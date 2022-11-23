@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PanelController">
+   <children>
+      <Accordion layoutX="65.0" layoutY="92.0" />
+      <Button fx:id="botoningresar" layoutX="24.0" layoutY="234.0" mnemonicParsing="false" onAction="#ingresar" prefHeight="45.0" prefWidth="186.0" style="-fx-background-color: red;" styleClass="Botón buttonColor = new Button(&quot;Color&quot;);buttonColor.setStyle(&quot;-fx-background-color: slateblue; -fx-text-fill: white;&quot;);" text="ingresar" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Forte" size="25.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblVehiculo" layoutX="243.0" layoutY="126.0" prefHeight="275.0" prefWidth="343.0">
+        <columns>
+          <TableColumn fx:id="coluPlaca" editable="false" prefWidth="128.0" text="Placa" />
+          <TableColumn fx:id="columfecha" prefWidth="208.79998779296875" text="fecha" />
+        </columns>
+      </TableView>
+      <Label layoutX="188.0" layoutY="73.0" prefHeight="39.0" prefWidth="263.0" text="Vehiculos en el parqueadero " textFill="WHITE">
+         <font>
+            <Font name="Harlow Solid Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="188.0" prefHeight="47.0" prefWidth="349.0" text="parqueadero dinamita" textFill="#fa2a2a">
+         <font>
+            <Font name="Harlow Solid Italic" size="39.0" />
+         </font>
+      </Label>
+      <Button fx:id="botosalir" layoutX="24.0" layoutY="296.0" mnemonicParsing="false" onAction="#salir" prefHeight="45.0" prefWidth="186.0" style="-fx-background-color: red;" text="salida" textFill="#f7f7f7">
+         <font>
+            <Font name="Forte" size="25.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="125.0" fitWidth="81.0" layoutX="65.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Dynamite-PNG-HD-Photos.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="textplaca" layoutX="30.0" layoutY="153.0" prefHeight="33.0" prefWidth="174.0" promptText="Ingrese su placa">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font></TextField>
+      <ChoiceBox fx:id="tipo" layoutX="29.0" layoutY="200.0" prefHeight="25.0" prefWidth="174.0" style="-fx-background-image: red;" />
+      <Button fx:id="butonfil" layoutX="24.0" layoutY="356.0" mnemonicParsing="false" onAction="#filtrar" prefHeight="45.0" prefWidth="186.0" style="-fx-background-color: red;" text="Filtrar" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
